@@ -235,7 +235,7 @@ header {
   }
 }
 
-/* Header Section Media Query */
+/* Header Section Media Query  for mobile*/
 @media screen and (max-width: 576px) {
   .section_title {
     font-size: 3.2rem;
@@ -330,4 +330,63 @@ header {
     padding: 1.6rem;
     width: 17rem;
   }
+}
+
+@media screen and (min-width:576px) and (max-width:768px){
+  /* .section_title {
+    font-size: 3.2rem;
+  }
+  .section_description {
+    font-size: 1.6rem;
+  } */
+  .primary_btn {
+    font-size: 1.6rem;
+    padding: 1.6rem 3rem;
+    width: 22rem;
+    height: auto;
+  }
+  .header_nav {
+    padding: 0% 5%;
+    font-size: 5px;
+  }
+
+  .banner_section {
+    flex-direction: column;
+    width: 90%;
+    gap: 8rem;
+
+  }
+  .banner_section_contents{
+    .section_description{
+      width: 70%;
+    }
+  }
+
+  .banner_img_card {
+    width: 17rem;
+  }
+  #banner_img_card-1 {
+    top: 64rem;
+    right: 15rem;
+    width: 16rem;
+    .section_title {
+      font-size: 2.5rem;
+      padding-left: 2.5rem;
+    }
+    .section_description {
+      font-size: 1.2rem;
+    }
+  }
+  #banner_img_card-2 {
+    bottom: 10rem;
+    left: 15rem;
+    .section_title {
+      font-size: 2rem;
+    }
+    .section_description {
+      font-size: 1.2rem;
+    }
+  }
+}
+
 }
