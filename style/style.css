@@ -22,6 +22,72 @@ li{
 /* Shared Css */
 :root {
     --primary-color: rgb(255, 255, 255);
-    --secondary-color: rgba(255, 255, 255, 0.5);
+    --secondary-color: rgba(255, 255, 255, 0.50);
     --btnbg-color: rgb(230, 83, 60);
   }
+
+  /* Shared Css */
+  .fixed_margin{
+    width: 80%;
+    margin: auto;
+  }
+  .fixed_padding{
+    padding: 0% 10%;
+  }
+  .display_flex{
+    display: flex;
+  }
+.section_title{
+color: var(--primary-color);
+font-size: 4.8rem;
+}
+.section_subtitle{
+
+}
+.section_description{
+
+}
+  /* Header Nav Section */
+  header{
+    padding-top: 4rem;
+  }
+  .header_nav, .nav_menu{
+    justify-content: space-between;
+    align-items: center;
+  }
+  .brand_name{
+    font-size: 3.6rem;
+    color: var(--btnbg-color);
+    font-weight: 800;
+    font-style: italic;
+  }
+.nav_menu{
+    gap: 4.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 4rem;
+    -webkit-border-radius: 4rem;
+    -moz-border-radius: 4rem;
+    -ms-border-radius: 4rem;
+    -o-border-radius: 4rem;
+}
+ 
+.nav_menu .nav_link a{
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    padding: 1.2rem 0rem;
+    display: inline-block;
+}
+#nav_link-1{
+    background-color: var(--btnbg-color);
+    font-weight: 600;
+    padding: 1.2rem 3rem;
+    border-radius: 4rem;
+    -webkit-border-radius: 4rem;
+    -moz-border-radius: 4rem;
+    -ms-border-radius: 4rem;
+    -o-border-radius: 4rem;
+}
+#nav_link-4{
+    padding-right: 2rem;
+}
+/* Header Banner Section */
