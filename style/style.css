@@ -235,7 +235,6 @@ header {
   }
 }
 
-
 /* Header Section Media Query */
 @media screen and (max-width: 576px) {
   .section_title {
@@ -253,7 +252,7 @@ header {
   .primary_btn {
     font-size: 1.6rem;
     padding: 1.6rem 2rem;
-    width: 17rem;
+    width: 19rem;
     height: auto;
   }
   .header_nav {
@@ -302,19 +301,20 @@ header {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 374px) {
   .banner_btn {
     gap: 8px;
   }
   .primary_btn {
     font-size: 1.4rem;
     padding: 1.6rem;
-    width: 14rem;
+    width: 15rem;
   }
   .banner_img_card {
     width: 15rem;
   }
   #banner_img_card-1 {
+    width: 15rem;
     .section_title {
       padding-left: 2rem;
       font-size: 2rem;
@@ -322,5 +322,12 @@ header {
     .section_description {
       font-size: 1.1rem;
     }
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 400px) {
+  .primary_btn {
+    font-size: 1.4rem;
+    padding: 1.6rem;
+    width: 17rem;
   }
 }
