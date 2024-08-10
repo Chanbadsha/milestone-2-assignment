@@ -51,7 +51,7 @@ li {
 .display_flex {
   display: flex;
 }
-.display_grid{
+.display_grid {
   display: grid;
 }
 .section_title {
@@ -446,6 +446,7 @@ header {
   .habit_section {
     padding: 1rem 5%;
   }
+
   .habit_section_contents {
     padding-bottom: 3rem;
     .section_title {
@@ -492,23 +493,23 @@ header {
   background: #222;
   padding: 3rem 3rem 3rem 5rem;
   justify-content: space-between;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
-.goal_section_contents{
-.section_title{
-  width: 50%;
-  margin: 1.5rem 0rem;
+.goal_section_contents {
+  .section_title {
+    width: 50%;
+    margin: 1.5rem 0rem;
+  }
+  .section_description {
+    width: 60%;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+  }
 }
-.section_description{
-  width: 60%;
-  margin-bottom: 3rem;
-  line-height: 1.6;
-}
-}
-.goal_section_img{
+.goal_section_img {
   display: flex;
   justify-content: flex-end;
-    }
+}
 .goal_section_img img {
   text-align: right;
   min-height: 100%;
@@ -522,4 +523,64 @@ header {
   -moz-border-radius: 2rem;
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
+}
+
+/* Goal section media query for mobile */
+@media screen and (max-width: 576px) {
+  .goal_section {
+    grid-template-columns: 1fr !important;
+    padding: 2rem;
+  }
+  .goal_section_contents {
+    margin-bottom: 2rem;
+    .section_title {
+      width: 90%;
+    }
+    .section_description {
+      width: 100%;
+    }
+    .primary_btn {
+      width: 100%;
+    }
+  }
+  .goal_section_img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .goal_section_img img {
+    object-fit: fill;
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  .goal_section_contents {
+    .section_title {
+      width: 100%;
+    }
+  }
+}
+
+/* Goal section Media Query for tab */
+@media screen and (min-width:576px)  and (max-width:768px) {
+  .goal_section_contents{
+    .section_title{
+      font-size: 3.2rem;
+      width: 80%;
+    }
+    .section_description{
+      width: 90%;
+    }
+  }
+  .goal_section_img{
+    width: 100%;
+  }
+  .goal_section_img img{
+    max-width: 100%;
+    height: auto;
+    object-position: 66% 30%;
+
+  }
+  
 }
