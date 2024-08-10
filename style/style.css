@@ -39,22 +39,25 @@ li {
 .fixed_padding {
   padding: 0% 10%;
 }
-.text_center{
+.text_center {
   text-align: center;
 }
-.text_right{
+.text_right {
   text-align: right;
 }
-.text_left{
+.text_left {
   text-align: left;
 }
 .display_flex {
   display: flex;
 }
-
+.display_grid{
+  display: grid;
+}
 .section_title {
   color: var(--primary-color);
   font-size: 4.8rem;
+  font-weight: 900;
 }
 
 .section_subtitle {
@@ -342,7 +345,7 @@ header {
   }
 }
 
-@media screen and (min-width:576px) and (max-width:768px){
+@media screen and (min-width: 576px) and (max-width: 768px) {
   /* .section_title {
     font-size: 3.2rem;
   }
@@ -364,10 +367,9 @@ header {
     flex-direction: column;
     width: 90%;
     gap: 8rem;
-
   }
-  .banner_section_contents{
-    .section_description{
+  .banner_section_contents {
+    .section_description {
       width: 70%;
     }
   }
@@ -399,28 +401,27 @@ header {
   }
 }
 
-
 /* Habit section css*/
-.habit_section{
+.habit_section {
   flex-direction: column;
-  padding:10rem 10% ;
+  padding: 10rem 10%;
 }
-.habit_section_contents{
- padding-bottom: 6rem;
- .section_title{
-  margin-bottom: 1rem;
- }
- .section_description{
-  width: 45%;
-  margin: auto;
- }
+.habit_section_contents {
+  padding-bottom: 6rem;
+  .section_title {
+    margin-bottom: 1rem;
+  }
+  .section_description {
+    width: 45%;
+    margin: auto;
+  }
 }
-.habit_card{
+.habit_card {
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.habit_card_img img{
+.habit_card_img img {
   border: 5px solid rgba(78, 74, 74, 0.5);
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -428,12 +429,12 @@ header {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-.habit_card_contents{
+.habit_card_contents {
   text-align: center;
-  .section_subtitle{
-margin: 2rem 0rem 0.5rem 0rem;
+  .section_subtitle {
+    margin: 2rem 0rem 0.5rem 0rem;
   }
-  .section_description{
+  .section_description {
     width: 80%;
     margin: auto;
     font-size: 1.4rem;
@@ -441,47 +442,84 @@ margin: 2rem 0rem 0.5rem 0rem;
 }
 
 /* Habit section Media Query for mobile devices */
-@media screen and (max-width:576px) {
-  .habit_section{
+@media screen and (max-width: 576px) {
+  .habit_section {
     padding: 1rem 5%;
   }
-  .habit_section_contents{
+  .habit_section_contents {
     padding-bottom: 3rem;
-    .section_title{
+    .section_title {
       font-size: 3.2rem;
       width: 100%;
     }
-    .section_description{
+    .section_description {
       width: 100%;
     }
   }
-  .habit_section_cards{
+  .habit_section_cards {
     flex-direction: column;
     gap: 3rem;
-
   }
-  .habit_card_contents{
-    .section_subtitle{
+  .habit_card_contents {
+    .section_subtitle {
       margin-top: 1rem;
     }
-    .section_description{
- width: 90%;
- margin: auto;
-  }
-}
-}
-
-/* Habit section Media query for tab */
-@media screen and (min-width:576px) and (max-width:768px){
-  .habit_section_contents{
-    .section_description{
+    .section_description {
       width: 90%;
       margin: auto;
     }
   }
-  .habit_section_cards{
+}
+
+/* Habit section Media query for tab */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .habit_section_contents {
+    .section_description {
+      width: 90%;
+      margin: auto;
+    }
+  }
+  .habit_section_cards {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 2rem;
   }
+}
+/* Goal section Css */
+.goal_section {
+  margin-bottom: 10rem;
+  border-radius: 18px;
+  background: #222;
+  padding: 3rem 3rem 3rem 5rem;
+  justify-content: space-between;
+  grid-template-columns: repeat(2,1fr);
+}
+.goal_section_contents{
+.section_title{
+  width: 50%;
+  margin: 1.5rem 0rem;
+}
+.section_description{
+  width: 60%;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+}
+.goal_section_img{
+  display: flex;
+  justify-content: flex-end;
+    }
+.goal_section_img img {
+  text-align: right;
+  min-height: 100%;
+  min-width: 50%;
+  max-width: 70%;
+  height: 40rem;
+  object-fit: none;
+  object-position: 70% 30%;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
 }
