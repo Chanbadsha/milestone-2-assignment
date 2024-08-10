@@ -39,7 +39,15 @@ li {
 .fixed_padding {
   padding: 0% 10%;
 }
-
+.text_center{
+  text-align: center;
+}
+.text_right{
+  text-align: right;
+}
+.text_left{
+  text-align: left;
+}
 .display_flex {
   display: flex;
 }
@@ -50,6 +58,8 @@ li {
 }
 
 .section_subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 .section_description {
@@ -308,7 +318,7 @@ header {
   .primary_btn {
     font-size: 1.4rem;
     padding: 1.6rem;
-    width: 15rem;
+    width: 16rem;
   }
   .banner_img_card {
     width: 15rem;
@@ -386,5 +396,92 @@ header {
     .section_description {
       font-size: 1.2rem;
     }
+  }
+}
+
+
+/* Habit section css*/
+.habit_section{
+  flex-direction: column;
+  padding:10rem 10% ;
+}
+.habit_section_contents{
+ padding-bottom: 6rem;
+ .section_title{
+  margin-bottom: 1rem;
+ }
+ .section_description{
+  width: 45%;
+  margin: auto;
+ }
+}
+.habit_card{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.habit_card_img img{
+  border: 5px solid rgba(78, 74, 74, 0.5);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.habit_card_contents{
+  text-align: center;
+  .section_subtitle{
+margin: 2rem 0rem 0.5rem 0rem;
+  }
+  .section_description{
+    width: 80%;
+    margin: auto;
+    font-size: 1.4rem;
+  }
+}
+
+/* Habit section Media Query for mobile devices */
+@media screen and (max-width:576px) {
+  .habit_section{
+    padding: 1rem 5%;
+  }
+  .habit_section_contents{
+    padding-bottom: 3rem;
+    .section_title{
+      font-size: 3.2rem;
+      width: 100%;
+    }
+    .section_description{
+      width: 100%;
+    }
+  }
+  .habit_section_cards{
+    flex-direction: column;
+    gap: 3rem;
+
+  }
+  .habit_card_contents{
+    .section_subtitle{
+      margin-top: 1rem;
+    }
+    .section_description{
+ width: 90%;
+ margin: auto;
+  }
+}
+}
+
+/* Habit section Media query for tab */
+@media screen and (min-width:576px) and (max-width:768px){
+  .habit_section_contents{
+    .section_description{
+      width: 90%;
+      margin: auto;
+    }
+  }
+  .habit_section_cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 2rem;
   }
 }
