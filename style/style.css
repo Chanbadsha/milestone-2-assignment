@@ -620,7 +620,7 @@ header {
 #training_cards_1 {
   background-image: url(../images/exercise1.jpg);
   background-size: 100% 100%;
-  background-color: rgb(111, 220, 240);
+  background-color: #48caae;
   background-blend-mode: multiply;
   P {
     bottom: 5rem;
@@ -641,7 +641,7 @@ header {
 #training_cards_3 {
   background-image: url(../images/exercise3.png);
   background-size: 100% 100%;
-  background-color: rgba(219, 86, 86, 0.555);
+  background-color: #777775;
   background-blend-mode: multiply;
   P {
     bottom: 5rem;
@@ -651,7 +651,7 @@ header {
 #training_cards_4 {
   background-image: url(../images/exercise4.png);
   background-size: 100% 100%;
-  background-color: rgba(219, 86, 86, 0.555);
+  background-color: rgba(21, 24, 25, 0.5);
   background-blend-mode: multiply;
   grid-column: span 2;
   p {
@@ -662,7 +662,7 @@ header {
 #training_cards_5 {
   background-image: url(../images/exercise5.jpg);
   background-size: 100% 100%;
-  background-color: rgba(219, 86, 86, 0.555);
+  background-color: rgb(143, 243, 106);
   background-blend-mode: multiply;
   P {
     bottom: 5rem;
@@ -672,7 +672,7 @@ header {
 #training_cards_6 {
   background-image: url(../images/exercise6.jpg);
   background-size: 100% 100%;
-  background-color: rgba(219, 86, 86, 0.555);
+  background-color: #97abe1;
   background-blend-mode: multiply;
   grid-column: span 2;
 
@@ -775,3 +775,38 @@ header {
     }
   }
 }
+
+/* BMI section Css */
+.bmi_section{
+margin-top: -5rem;
+padding-bottom: 5rem;
+
+  .section_title, .section_description{
+    margin-left: 50rem;
+    width:35%;
+    line-height: 1.5;
+  }
+}
+
+.bmi_calculator_section{
+  background-color: #222222;
+  padding: 5rem 10%;
+  grid-template-columns: repeat(2,1fr);
+}
+
+
+.bmi_calculate_form{
+  grid-template-columns: repeat(2,1fr);
+  input, select{
+    height: 5rem;
+    background-color: #383838;
+  }
+}
+#activity_factor{
+  grid-column: span 2;
+}
+input::placeholder{
+  color: var(--secondary-color);
+}
+
+

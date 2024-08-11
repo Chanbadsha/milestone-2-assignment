@@ -167,6 +167,69 @@
           </div>
         </div>
       </section>
+
+      <section class="bmi_section">
+        <h4 class="section_title">BMI Calculator</h4>
+        <p class="section_description">
+          We believe fitness should be accessible to everyone, everywhere,
+          regardless of income or access to a gym.
+        </p>
+      </section>
+
+      <section class="bmi_calculator_section fixed_padding display_grid">
+        <div class="bmi_chart_section">
+          <h6 class="section_subtitle">BMI Calculator Chart</h6>
+          <table class="bmi_chart">
+            <thead>
+              <th>BMI</th>
+              <th>Weight status</th>
+            </thead>
+            <tr>
+              <td>Below 18.5</td>
+              <td>Underweight</td>
+            </tr>
+            <tr>
+              <td>18.5 - 24.9</td>
+              <td>healthy</td>
+            </tr>
+            <tr>
+              <td>25.0 - 29.9</td>
+              <td>Overweight</td>
+            </tr>
+            <tr>
+              <td>30.0 - and Above</td>
+              <td>Obese</td>
+            </tr>
+          </table>
+        </div>
+        <div class="bmi_calculate_section">
+          <h6 class="section_subtitle">Calculate your BMI</h6>
+          <p class="section_description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
+
+          
+          <form action="" class="bmi_calculate_form display_grid">
+            <input type="number" name="" placeholder="Height/cm" id="">
+            <input type="number" name="" placeholder="Weight/kg" id="">
+            <input type="number" name="" placeholder="Age" id="">
+            <select name="" id="" aria-placeholder="Sex" >
+              <option value="Sex" disabled selected>Sex</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+
+
+            <select name="" id="activity_factor">
+              <option value="" selected disabled>Select an activity factor</option>
+              <option value="">Activity factor - 1</option>
+              <option value="">Activity factor - 2</option>
+              <option value="">Activity factor - 3</option>
+            </select>
+            <button class="primary_btn" id="bmi_calculate_form_btn">Calculate</button>
+          </form>
+
+
+        </div>
+      </section>
     </main>
 
     <footer></footer>
