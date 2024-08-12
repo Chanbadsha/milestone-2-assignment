@@ -613,7 +613,7 @@ header {
 }
 .training_section_card {
   height: 30rem;
-  min-width: 35rem;
+  min-width: 25rem;
   display: flex;
   position: relative;
 
@@ -1302,7 +1302,6 @@ textarea:focus {
     .section_title {
       font-size: 3.2rem;
     }
-
   }
   .feedback_section {
     grid-template-columns: repeat(2, 1fr);
