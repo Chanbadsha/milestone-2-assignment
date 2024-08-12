@@ -14,7 +14,9 @@ html {
   background-color: black;
   color: white;
 }
-
+img{
+  max-width: 100%;
+}
 a {
   text-decoration: none;
 }
@@ -250,6 +252,12 @@ header {
 
 /* Header Section Media Query  for mobile*/
 @media screen and (max-width: 576px) {
+  .fixed_padding{
+    padding: 0rem 2rem;
+  }
+  .fixed_margin{
+    margin: 0rem 2rem;
+  }
   .section_title {
     font-size: 3.2rem;
   }
@@ -346,12 +354,14 @@ header {
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
-  /* .section_title {
-    font-size: 3.2rem;
+  .fixed_padding{
+    padding: 0rem 2rem;
   }
-  .section_description {
-    font-size: 1.6rem;
-  } */
+  .fixed_margin{
+    width: 95%;
+    margin: auto;
+    
+  }
   .primary_btn {
     font-size: 1.6rem;
     padding: 1.6rem 3rem;
@@ -777,9 +787,7 @@ header {
 
 /* BMI section Css */
 .bmi_section {
-  /* margin-top: -8rem; */
   padding-bottom: 10rem;
-
   .section_title,
   .section_description {
     margin-left: 50rem;
@@ -887,4 +895,94 @@ select {
 }
 
 
-/* BMi Section Media */
+/* BMi Section Media Query for mobile*/
+@media screen and (max-width:576px) {
+  .bmi_section{
+    margin-top: -10rem;
+    padding: 2rem 2rem;
+    .section_title{
+      margin-left: 0rem;
+      width: 100%;
+      font-size: 3.2rem;
+    }
+    .section_description{
+      margin-left: 0rem;
+      width: 95%;
+      word-spacing: 2px;
+      letter-spacing: 0.3px;
+    }
+  }
+  
+.bmi_calculator_section{
+  padding:2rem;
+  flex-direction: column;
+  gap: 1rem;
+  .section_subtitle{
+    font-size: 1.6rem;
+  }
+}
+.bmi_chart{
+  margin-top: 1px;
+  width: 35rem;
+  margin-bottom: 1rem;
+}
+.bmi_calculator_section{
+  .section_description{
+    width: 90%;
+  }
+  .bmi_calculate_form{
+    gap: 1rem;
+    .primary_btn{
+ width: 200%;
+    }
+  }
+}
+}
+@media screen and (max-width:350px) {
+  .bmi_chart{
+    margin-top: 1px;
+    width: 30rem;
+    margin-bottom: 1rem;
+  }
+ header{
+  .primary_btn{
+    max-width: 14rem;
+  
+  }
+ }
+  
+}
+/* BMi Section Media Query for Tab*/
+@media screen and (min-width:576px) and (max-width:768px){
+  .bmi_section{
+    margin-top: -8rem;
+    padding: 8rem 2rem;
+    .section_title{
+      margin-left: 0rem;
+      width: 100%;
+    }
+    .section_description{
+      margin-left: 0rem;
+      width: 95%;
+      word-spacing: 2px;
+      letter-spacing: 0.3px;
+    }
+  }
+  .bmi_calculator_section{
+    padding:2rem;
+    flex-direction: column;
+    gap: 5rem;
+    .section_subtitle{
+      font-size: 2.8rem;
+    }
+    .section_description{
+      width: 90%;
+    }
+  }
+  .bmi_calculate_form{
+    gap: 1rem;
+    .primary_btn{
+      width: 70%;
+    }
+  }
+}
