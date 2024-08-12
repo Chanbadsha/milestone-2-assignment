@@ -641,7 +641,7 @@ header {
   background-blend-mode: multiply;
   p {
     bottom: 25rem;
-    left: 60rem;
+    left: 45rem;
   }
 }
 #training_cards_3 {
@@ -651,7 +651,7 @@ header {
   background-blend-mode: multiply;
   P {
     bottom: 5rem;
-    left: 5rem;
+    left: 2rem;
   }
 }
 #training_cards_4 {
@@ -662,7 +662,7 @@ header {
   grid-column: span 2;
   p {
     bottom: 25rem;
-    left: 30rem;
+    left: 40rem;
   }
 }
 #training_cards_5 {
