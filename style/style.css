@@ -535,7 +535,7 @@ header {
 @media screen and (max-width: 576px) {
   .goal_section {
     grid-template-columns: 1fr !important;
-    padding: 2rem 2rem 0rem 2rem;
+    padding:2rem;
     width: 90%;
     margin-bottom: 2rem;
   }
@@ -695,6 +695,7 @@ header {
   }
   .training_section_contents {
     margin-bottom: 3rem;
+    margin-top: 2rem;
     .section_title {
       font-size: 3.2rem;
       margin-bottom: 1rem;
@@ -1109,3 +1110,6 @@ select {
 }
 
 }
+
+
+/*  */
