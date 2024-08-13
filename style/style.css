@@ -940,6 +940,19 @@ select {
   }
 }
 @media screen and (max-width: 350px) {
+  .customer_feedback {
+    textarea {
+        font-size: 1rem !important;
+        width: 80%;
+        height: 3rem !important;
+        padding: 8px !important;
+    }
+    
+      .primary_btn {
+          font-size: 1rem !important;
+
+      }
+}
   .bmi_chart {
     margin-top: 1px;
     width: 30rem;
