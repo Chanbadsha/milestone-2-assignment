@@ -662,7 +662,7 @@ header {
   grid-column: span 2;
   p {
     bottom: 25rem;
-    left: 40rem;
+    left: 29rem;
   }
 }
 #training_cards_5 {
@@ -746,6 +746,7 @@ header {
     display: none;
   }
 }
+/* Training Section Media Query for Tab */
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .training_section_contents {
@@ -1113,7 +1114,7 @@ select {
 /* Testimonial Section */
 
 .testimonial_section {
-  background-color: #222222;
+  background-color: #a0bbd134;
   padding-bottom: 10rem;
   padding-top: 6rem;
   margin-top: 10rem;
@@ -1281,6 +1282,7 @@ textarea:focus {
     gap: 1rem;
     .primary_btn {
       font-size: 1.2rem;
+      padding: 1rem;
     }
     textarea {
       font-size: 1.2rem;
@@ -1325,8 +1327,86 @@ textarea:focus {
   .customer_feedback {
     margin-top: 2rem;
     gap: 1rem;
+
     textarea {
       width: 80%;
+    }
+  }
+}
+
+/* Footer Section Css */
+footer {
+  padding: 10rem 10% 2rem 10% !important;
+  background-color: #222222;
+}
+.footer_top,
+.footer_section_right {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  .brand_name {
+    font-size: 7rem;
+  }
+  .section_subtitle {
+    color: var(--primary-color);
+    font-size: 3.2rem;
+  }
+  .section_description {
+    width: 60%;
+    line-height: 1.5;
+    opacity: 0.8;
+    margin-top: 1rem;
+  }
+}
+.footer_top {
+  .section_description {
+    font-size: 2rem;
+  }
+}
+.footer_list_item {
+  padding: 1.1rem 0rem;
+
+  .section_description {
+    font-size: 2.5rem;
+  }
+}
+.footer_list_item:nth-child(1) {
+  padding-bottom: 2rem;
+}
+hr {
+  border-color: rgba(255, 255, 255, 0.1);
+  margin: 5rem 0rem;
+  border-width: 1px;
+}
+
+/* Footer section Media query for mobile device */
+@media screen and (max-width: 576px) {
+  footer {
+    padding-top: 2rem !important;
+  }
+  hr {
+    margin: 2rem 0rem;
+  }
+  .footer_top,
+  .footer_section_right {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    .section_description {
+      width: 95%;
+      font-size: 1.5rem;
+    }
+  }
+  .footer_list_item {
+    padding: 0.5rem;
+    .section_description {
+      font-size: 2rem;
+    }
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .footer_top {
+    grid-template-columns: repeat(1, 1fr);
+    .section_description {
+      width: 95%;
     }
   }
 }
