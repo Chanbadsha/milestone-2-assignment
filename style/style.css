@@ -189,6 +189,7 @@ header {
   font-weight: normal;
 }
 
+
 .banner_img_card {
   display: flex;
   justify-content: center;
@@ -412,6 +413,9 @@ header {
   flex-direction: column;
   padding: 10rem 10%;
 }
+.habit_section_cards{
+  grid-template-columns: repeat(4,1fr);
+}
 .habit_section_contents {
   padding-bottom: 6rem;
   .section_title {
@@ -452,7 +456,10 @@ header {
   .habit_section {
     padding: 1rem 5%;
   }
+.habit_section_cards{
+  grid-template-columns: repeat(1,1fr);
 
+}
   .habit_section_contents {
     padding-bottom: 3rem;
     .section_title {
@@ -792,9 +799,9 @@ header {
 }
 
 .bmi_calculator_section {
+  grid-template-columns: repeat(2,1fr);
   background-color: #222222;
   padding: 5rem 10%;
-  gap: 30rem;
   .section_subtitle {
     font-size: 2.8rem;
     font-weight: 900;
@@ -807,9 +814,6 @@ header {
     font-weight: 400;
     letter-spacing: 0.3px;
   }
-}
-
-.bmi_chart_section {
 }
 .bmi_chart {
   margin-top: 6rem;
@@ -830,9 +834,6 @@ header {
     font-size: 1.2rem;
     color: var(--secondary-color);
   }
-}
-.bmi_calculate_section {
-  width: 100%;
 }
 .bmi_calculate_form {
   margin-top: 3rem;
@@ -915,7 +916,7 @@ select {
 
   .bmi_calculator_section {
     padding: 2rem;
-    flex-direction: column;
+    grid-template-columns: repeat(1,1fr);
     gap: 1rem;
     .section_subtitle {
       font-size: 1.6rem;
@@ -967,9 +968,8 @@ select {
     }
   }
   .bmi_calculator_section {
-    padding: 2rem;
-    flex-direction: column;
-    gap: 5rem;
+    padding: 12rem;
+   grid-template-columns: repeat(1,1fr);
     .section_subtitle {
       font-size: 2.8rem;
     }
@@ -1131,7 +1131,7 @@ select {
   gap: 4rem;
 }
 .feeback_card {
-  justify-content: center;
+  justify-content: space-evenly;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -1406,4 +1406,107 @@ hr {
       width: 95%;
     }
   }
+}
+
+
+/* Media Query for Laptop Device */
+@media screen and (min-width:900px) and (max-width:1030px) {
+  .banner_section_contents{
+    .section_title{
+      font-size: 4.5rem;
+    }
+  }
+   #banner_img_card-1 {
+    right: -9rem;
+    width: 15rem;
+    height: 10rem;
+}
+#banner_img_card-2 {
+  bottom: 7rem;
+  right: 15rem;
+  width: 16rem;
+.section_title{
+  font-size: 3rem;
+}
+}
+.goal_section_contents {
+  .section_title {
+      width: 100%;
+  }
+  .section_description{
+    width: 85%;
+  }
+}
+.goal_section_img img {
+  max-width: 90%;
+  object-position: 68% 35%;
+}
+.training_section_card {
+  p {
+      font-size: 1.5rem;
+  }
+}
+#training_cards_5, #training_cards_1{
+  P {
+      bottom: 5rem;
+      left: 1rem;
+  }
+}
+#training_cards_2 {
+  p {
+      bottom: 25rem;
+      left: 35rem;
+  }
+}
+#training_cards_4 {
+  p {
+      bottom: 25rem;
+      left: 20rem;
+  }
+}
+.bmi_section {
+  .section_title, .section_description {
+      margin-left: 20rem;
+  }
+}
+.bmi_chart{
+  width: 30rem;
+}
+.bmi_calculator_section {
+  .section_description {
+      width: 100%;
+  }
+}
+
+.team_section_contents {
+  .section_description {
+      width: 55%;
+  }
+}
+.feedback_section {
+  gap: 1rem;
+}
+.feeback_card{
+  padding: 2rem;
+  gap: 1rem;
+}
+.client_section {
+  img {
+      height: 8rem;
+      width: 8rem;
+  }
+}
+.footer_top, .footer_section_right {
+  .section_subtitle {
+      font-size: 3rem;
+  }
+}
+.footer_list_item {
+  padding: 0.8rem 0rem;
+}
+.footer_top {
+  .section_description {
+      width: 95%;
+  }
+}
 }
