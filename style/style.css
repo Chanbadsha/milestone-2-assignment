@@ -613,13 +613,11 @@ header {
 }
 .training_section_card {
   height: 30rem;
-  min-width: 25rem;
   display: flex;
   position: relative;
 
   p {
     position: absolute;
-
     font-size: 2rem;
   }
 }
@@ -782,7 +780,6 @@ header {
     }
   }
 }
-
 /* BMI section Css */
 .bmi_section {
   padding-bottom: 10rem;
